@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../static/styles.css">
+        <title>Home Page</title>
+    </head>
+
+    <body>
+        <!-- Header / Naviagtion Section -->
+        <header>
+            <div class="headerContainer">
+                <h1>Welcome To My Website!</h1>
+                <nav>
+                    <div class="menubtn" onclick="toggleMenu()">
+                        <img src="../images/menubtn.svg" alt="Menu Button">
+                    </div>
+                    <ul id="menu" class="menucontents">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./page1.html">Giant Moray Eel</a></li>
+                        <li><a href="./page2.html">Leafy Seadragon</a></li>
+                        <li><a href="./page3.html">Peacock Mantis Shrimp</a></li>
+                        <li><a href="./page4.html">Antarctic Lanternfish</a></li>
+                        <li><a href="./page5.html">Common Octopus</a></li>
+                        <li><a href="./sources.html">Sources</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Content Section -->
+        <section class="homepage">
+            <div class="intro">
+                <h3>Explore some of my favorite marine animals!</h3>
+                <p>
+                    Why Marine Animals? I love marine life and I originally intended to pursue a degree in Marine Biology and attain a PhD in it.
+                    However, I pivoted to Information Science shortly before starting college, but it remains a major area of interest and something I enjoy researching in my free time.
+                </p>
+            </div>
+            <div class="navContainer">
+                <a href="./page1.html" class="navButton">Giant Moray Eel</a>
+                <a href="./page2.html" class="navButton">Leafy Seadragon</a>
+                <a href="./page3.html" class="navButton">Peacock Mantis Shrimp</a>
+                <a href="./page4.html" class="navButton">Antarctic Lanternfish</a>
+                <a href="./page5.html" class="navButton">Common Octopus</a>
+            </div>
+            <div>
+                <h3>After visiting each page come back here and take a little quiz!</h3>
+                <!-- Quiz Area -->
+                <div>
+                    <form id="reading-quiz" method="post" class="quiz">
+                        <p>Which of the following animals participates in cooperative hunting with another species?</p>
+                        <label>
+                            <input type="radio" name="q1" value="True">Giant Moray Eel
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="False">Leafy Seadragon
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="False">Peacock Mantis Shrimp
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="False">Antarctic Lanternfish
+                        </label>
+
+                        <p>What is the Leafy Seadragon also known as?</p>
+                        <label>
+                            <input type="radio" name="q2" value="False">Weedy Seadragon
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="True">Glauerts Seadragon
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="False">Dragon Pipefish
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="False">Sea Moth
+                        </label>
+
+                        <p>How many different photoreceptors does the Peacock Mantis Shrimp have?</p>
+                        <label>
+                            <input type="radio" name="q3" value="False">10
+                        </label>
+                        <label>
+                            <input type="radio" name="q3" value="False">8
+                        </label>
+                        <label>
+                            <input type="radio" name="q3" value="False">16
+                        </label>
+                        <label>
+                            <input type="radio" name="q3" value="True">12
+                        </label>
+
+                        <p>Which statement about the Giant Moray Eel is correct?</p>
+                        <label>
+                            <input type="radio" name="q4" value="False">Both heaviest and longest
+                        </label>
+                        <label>
+                            <input type="radio" name="q4" value="False">Longest
+                        </label>
+                        <label>
+                            <input type="radio" name="q4" value="True">Heaviest
+                        </label>
+                        <label>
+                            <input type="radio" name="q4" value="False">None of the above
+                        </label>
+
+                        <p>Where is the common octopus most often found?</p>
+                        <label>
+                            <input type="radio" name="q5" value="True">Temperate and tropical waters
+                        </label>
+                        <label>
+                            <input type="radio" name="q5" value="False">Only in the deep ocean
+                        </label>
+                        <label>
+                            <input type="radio" name="q5" value="False">Freshwater lakes
+                        </label>
+                        <label>
+                            <input type="radio" name="q5" value="False">Arctic waters
+                        </label>
+
+                        <p>Why does the Antarctic lanternfish migrate vertically each day?</p>
+                       <label>
+                            <input type="radio" name="q6" value="False">To follow the seasonal movement of krill
+                        </label>
+                        <label>
+                            <input type="radio" name="q6" value="False">To escape colder surface waters
+                        </label>
+                        <label>
+                            <input type="radio" name="q6" value="True">To avoid predators during the day and feed at night
+                        </label>
+                        <label>
+                            <input type="radio" name="q6" value="False">To gather in large schools for mating
+                        </label><br>
+
+                        <p><b>Final Question!</b></p>
+                        <p>Which of the following do you think was the coolest or most interesting to learn about?</p>
+                        <label>
+                            <input type="radio" name="q7" value="Giant Moray Eel">Giant Moray Eel
+                        </label>
+                        <label>
+                            <input type="radio" name="q7" value="Leafy Seadragon">Leafy Seadragon
+                        </label>
+                        <label>
+                            <input type="radio" name="q7" value="Peacock Mantis Shrimp">Peacock Mantis Shrimp
+                        </label>
+                        <label>
+                            <input type="radio" name="q7" value="Antarctic Lanternfish">Antarctic Lanternfish
+                        </label>
+                        <label>
+                            <input type="radio" name="q7" value="Common Octopus">Common Octopus
+                        </label>
+
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <p id="output"></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>INFSCI1570 - Assignment 1</p>
+        </footer>
+
+        <script src="../static/main.js"></script>
+    </body>
+</html>
